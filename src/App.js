@@ -1,10 +1,14 @@
 import TodoApp from './components/TodoApp';
+import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
+    <React.StrictMode>
+    <BrowserRouter>
       <TodoApp />
-    </div>
+    </BrowserRouter>
+  </React.StrictMode>
   );
 }
 
