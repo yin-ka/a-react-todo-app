@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import NotMatch from '../routes/NotMatch.js';
-import Layout from './Layout.js';
-import Home from '../routes/Home.js';
-import About from '../routes/About.js';
-import Login from '../routes/Login.js';
-import Profile from '../routes/Profile.js';
-import SinglePage from '../routes/SinglePage.js';
-import ProtectedRoute from './ProtectedRoute.js';
+import NotMatch from '../routes/NotMatch';
+import Layout from './Layout';
+import Home from '../routes/Home';
+import About from '../routes/About';
+import Login from '../routes/Login';
+import Profile from '../routes/Profile';
+import SinglePage from '../routes/SinglePage';
+import ProtectedRoute from './ProtectedRoute';
 
 const TodoApp = () => (
   <Routes>

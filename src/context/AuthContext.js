@@ -1,10 +1,13 @@
-import {
+import React, {
   useEffect, useState, useContext, createContext,
 } from 'react';
+import PropTypes from 'prop-types';
 
 const AuthContext = createContext(null);
+
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState('');
+  // eslint-disable-next-line no-unused-vars
   function getUsername() {
     // getting stored state
     const temp = localStorage.getItem('username');
@@ -24,4 +27,9 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
+AuthProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export const useAuthContext = () => useContext(AuthContext);
